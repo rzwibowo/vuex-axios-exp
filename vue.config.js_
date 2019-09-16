@@ -1,0 +1,16 @@
+// vue.config.js
+// -----------------------------------------------
+// | NOTE:                                       |
+// -----------------------------------------------
+//   This configuration file purpose
+//   is expected the app to deploy to
+//   https://domain.com/ujicoba/
+//   [ Apache server]
+//   Rename this file or simply comment all lines
+//   to build in default configurations
+
+module.exports = {
+    baseUrl: process.env.NODE_ENV === 'production'
+        ? '/ujicoba/'
+        : '/'
+}
